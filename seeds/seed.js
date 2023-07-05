@@ -39,7 +39,7 @@ const commentData = require('./commentData.json');
 
 const seedDatabase = async () => {
   try {
-    await mongoose.connect('mongodb://127.0.0.1:27017/techblog_db', {
+    await mongoose.connect('mongodb://localhost:27017/techblog_db', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
