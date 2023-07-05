@@ -57,13 +57,13 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/techblog_db', {
+mongoose.connect('mongodb://127.0.0.1:27017/techblog_db', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
 const store = new MongoDBStore({
-  uri: 'mongodb://localhost:27017/techblog_db',
+  uri: 'mongodb://127.0.0.1:27017/techblog_db',
   collection: 'sessions',
 });
 
