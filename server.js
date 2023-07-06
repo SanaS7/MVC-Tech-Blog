@@ -57,13 +57,13 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/techblog_db', {
+mongoose.connect('mongodb+srv://boybrown552:zXgo9cMzbRgxnJ4P@cluster0.zsze6ft.mongodb.net/techblog_db=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
 const store = new MongoDBStore({
-  uri: 'mongodb://127.0.0.1:27017/techblog_db',
+  uri: 'mongodb+srv://boybrown552:zXgo9cMzbRgxnJ4P@cluster0.zsze6ft.mongodb.net/techblog_db=true&w=majority',
   collection: 'sessions',
 });
 
